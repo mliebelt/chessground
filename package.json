@@ -15,10 +15,11 @@
     "rollup": "^2",
     "rollup-plugin-terser": "^7",
     "tslib": "^2",
-    "typescript": "^4"
+    "typescript": "^4",
+    "yarpm": "^1.2.0"
   },
   "scripts": {
-    "prepare": "$npm_execpath run compile",
+    "prepare": "yarpm run compile",
     "compile": "tsc --outDir . --sourceMap --declaration",
     "lint": "eslint src/*.ts",
     "format": "prettier --write .",
